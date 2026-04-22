@@ -32,6 +32,7 @@ env/
 *.csv
 !requirements.txt
 !packages.txt
+!runtime.txt
 
 # IDE / OS
 .idea/
