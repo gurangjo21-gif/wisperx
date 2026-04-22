@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# Streamlit secrets (절대 커밋 금지)
+.streamlit/secrets.toml
+
+# 개인 환경설정
+.env
+.env.*
+!.env.example
+
+# 모델 캐시 / 임시 오디오
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.mp4
+*.webm
+*.mkv
+*.aac
+*.srt
+*.txt
+*.csv
+!requirements.txt
+!packages.txt
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 캐시
+.cache/
+.huggingface/

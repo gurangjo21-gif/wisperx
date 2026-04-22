@@ -1,0 +1,10 @@
+streamlit>=1.32
+numpy>=2.1
+pandas
+torch
+torchaudio
+faster-whisper==1.2.1
+whisperx==3.8.4
+ctranslate2
+pyannote.audio>=3.1
+huggingface_hub
