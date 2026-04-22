@@ -24,15 +24,13 @@ st.title("WhisperX + 화자분리 전사 도구")
 
 
 def _default_hf_token() -> str:
-    # 프로토타입용 fallback. 운영 전 반드시 Revoke 후 secrets/env 로 옮길 것.
-    HARDCODED = "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"
     try:
         token = st.secrets.get("HF_TOKEN", "")
         if token:
             return token
     except Exception:
         pass
-    return os.environ.get("HF_TOKEN", "") or HARDCODED
+    return os.environ.get("HF_TOKEN", "")
 
 
 _on_cuda = torch.cuda.is_available()
